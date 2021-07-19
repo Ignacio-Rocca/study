@@ -14,39 +14,50 @@
     ![linear_search](resources/linear_search.gif)
 
 - ### Binary Search
-    *
+    * Given an sorted array, take the middle element and compare with the target value and if not equal discard the half of array that we know the target value is impossible to be there. And then continue with the same process
+    * O(log(N))
     
     ![binary_search](resources/binary_search.gif)
   
 - ### Jump Search
-    *
+    * Like Binary Search, Jump Search is a searching algorithm for sorted arrays. The basic idea is to check fewer elements (than linear search) by jumping ahead by fixed steps or skipping some elements in place of searching all elements.
+    * The optimal size of a block to be jumped is (√n). This makes the time complexity of Jump Search O(√n).
+    * Binary Search is better than Jump Search, but Jump search has an advantage that we traverse back only once (Binary Search may require up to O(Log n) jumps, consider a situation where the element to be searched is the smallest element or smaller than the smallest). So in a system where binary search is costly, we use Jump Search.
+    * Example: find 34
     
     ![jump_search](resources/jump_search.gif)
   
 - ### Interpolation Search
-    *
+    * The Interpolation Search is an improvement over Binary Search for instances, where the values in a sorted array are uniformly distributed. Binary Search always goes to the middle element to check. On the other hand, interpolation search may go to different locations according to the value of the key being searched.
+    * To find the position to be searched, it uses following formula : <br>
+      `pos = start + [ (val - arr[start]) * (end - start) / (arr[end]-arr[start]) ]`
     
-    ![interpolation_search](resources/interpolation_search.gif)
+    ![interpolation_search](resources/interpolation_search.png)
   
 - ### Exponential Search
-    *
+    * Exponential search involves two steps:
+        <br>
+        1 - Find range where element is present
+        <br>
+        2 - Do Binary Search in above found range.
     
-    ![exponential_search](resources/exponential_search.gif)
+    * The idea is to start with subarray size 1, compare its last element with x, then try size 2, then 4 and so on until last element of a subarray is not greater. Once we find an index i (after repeated doubling of i), we know that the element must be present between i/2 and i
+    * O(Log n)
+    
+    ![exponential_search](resources/exponential_search.jpeg)
   
 - ### Sublist Search (Search a linked list in another list)
-    *
-    
-    ![sublist_search](resources/sublist_search.gif)
+    * I didn't find an algorithm but I design an recursive func that perform in O(m.n)
   
 - ### Fibonacci Search
-    *
-   
-    ![fibonacci_search](resources/fibonacci_search.gif)
+    * Fibonacci Search is a comparison-based technique that uses Fibonacci numbers to search an element in a sorted array.
+    * Similarities with Binary Search:
+        1. Works for sorted arrays
+        2. A Divide and Conquer Algorithm.
+        3. Has O(Log(N)) time complexity.
+    * F(n) = F(n-1) + F(n-2), F(0) = 0, F(1) = 1
   
 - ### The Ubiquitous Binary Search
-    *
-    
-    ![u_binary_search](resources/u_binary_search.gif)
 
 
 ##Sorting Algorithms
