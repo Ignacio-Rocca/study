@@ -4,6 +4,12 @@
 - [MIT Introduction to Algorithms](https://www.youtube.com/watch?v=HtSuA80QTyo&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=1)
 - [MIT Advanced Algorithms](https://www.youtube.com/playlist?list=PL6ogFv-ieghdoGKGg2Bik3Gl1glBTEu8c)
 - [UC Berkeley Algorithms](https://archive.org/details/ucberkeley-webcast?&and%5B%5D=subject%3A%22Computer%20Science%22&and%5B%5D=subject%3A%22CS%22)
+- [Divide and Conquer](https://medium.com/techie-delight/divide-and-conquer-interview-questions-and-practice-problems-8855e45f4200)
+- [Recursion](https://www.geeksforgeeks.org/recursion/)
+- [Backtracking](https://www.geeksforgeeks.org/backtracking-introduction/)
+- [Dynamic Programming](https://www.geeksforgeeks.org/dynamic-programming/)
+- [Brute Force Search](https://en.wikipedia.org/wiki/Brute-force_search)
+
 
 
 ##Search algorithms
@@ -112,12 +118,33 @@
     
 
 ##Graph Algorithms
-- ###Depth First Search
-- ###Breadth First Search
+- ###Depth First Search ( DFS )
+    * Is an algorithm for traversing or searching tree or graph data structures. The algorithm starts at the root node (selecting some arbitrary node as the root node in the case of a graph) and explores as far as possible along each branch before backtracking.
+    
+- ###Breadth First Search ( BFS )
+    * es un algoritmo de búsqueda no informada utilizado para recorrer o buscar elementos en un grafo (usado frecuentemente sobre árboles). Intuitivamente, se comienza en la raíz (eligiendo algún nodo como elemento raíz en el caso de un grafo) y se exploran todos los vecinos de este nodo. A continuación para cada uno de los vecinos se exploran sus respectivos vecinos adyacentes, y así hasta que se recorra todo el árbol.
+
+    ![dfs_bfs_alg](resources/dfs_bfs.gif)
+
 - ###Topological Sort
+  
 - ###Dijkstra's Algorithm
+  
 - ###Bellman-Ford Algorithm
+  
+- ###Warshall Algorithm: Transitive Closure
+    * Genera una matriz booleana que nos dice si existe un camino de un nodo a otro en un grafo
+    * O(n^3)
+    ![warshall_alg](resources/warshall_algorithm.png)
+
+- ###Floyd Algorithm: All pairs shortest path
+    * Problem: In a weighted (di)graph, find shortest paths between
+      every pair of vertices 
+    ![floyd_alg](resources/floyd_algorithm.png)
+    
 - ###Floyd-Warshall Algorithm
+    * The Floyd–Warshall algorithm compares all possible paths through the graph between each pair of vertices. The problem is to find shortest distances between every pair of vertices in a given edge weighted directed Graph.
+    
 - ###Prim's Algorithm
 - ###Kruskal's Algorithm
 

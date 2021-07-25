@@ -26,6 +26,18 @@
 
 ![queue](resources/queue.gif)
 
+###Bags
+- The order of insertion is completely irrelevant. Elements can be inserted and removed entirely at random.
+- The traditional definition of the Bag abstraction includes the following operations:
+    * Add (newElement): Place a value into the bag
+    * Remove (element): Remove the value
+    * Contains (element): Return true if element is in collection
+    * Size (): Return number of values in collection
+    * Iterator (): Return an iterator used to loop over collection
+
+###Sets
+-A Set extends the bag in two important ways. First, the elements in a set must be unique; adding an element to a set when it is already contained in the collection will have no effect. Second, the set adds a number of operations that combine two sets to produce a new set.
+
 ###Hash Map
 - In computing, a hash map is a data structure that implements an associative array abstract data type, a structure that can map keys to values. A hash table uses a hash function to compute an index, also called a hash code, into an array of buckets or slots, from which the desired value can be found. During lookup, the key is hashed and the resulting hash indicates where the corresponding value is stored.
 - Hashing: is used to map data of an arbitrary size to data of a fixed size. Use a hash func (SHA-256)

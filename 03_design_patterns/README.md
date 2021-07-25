@@ -2,7 +2,9 @@
 
 ###Links To Study
 
-- [Design patterns site](http://www.designpatternsingo.com/)
+- [Refactoring Guru](https://refactoring.guru/es/design-patterns)
+- [Design patterns in Go](http://www.designpatternsingo.com/)
+- [Inversion of Control](https://martinfowler.com/bliki/InversionOfControl.html)
 
 ###Links to do courses
 
