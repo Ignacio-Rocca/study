@@ -158,4 +158,16 @@
 - In Place Algorithms: transform input using no auxilary data structure
 - Not In Place or Out of Place Algorithms: transform input using auxilary data structure
     
+## Big O
 
+- Big O notation is used in computer science to describe the performance or complexity of an algorithm.
+- Big O specifically describes the worst-case scenario, and can be used to describe the execution time required or the space used by an algorithm
+
+- There are different types of time complexity:
+    * Linear Time (example above) => O(n)
+    * Constant Time (runtime doesn’t change whatever the input is) => O(1)
+    * Quadratic Time(the time it takes to complete a function increase like a quadratic function) => O(n²)
+
+- There are different types of space complexity:
+    * O(1) => when the space in memory used is not affected by the input
+    * O(n) => when your algorithm uses a data structure that increase like the input
